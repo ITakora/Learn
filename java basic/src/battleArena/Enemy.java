@@ -2,10 +2,17 @@ package battleArena;
 
 public class Enemy {
    private String typeOfEnemy;
-    private int healthPoints = 10 ;
-    private int attackDamage = 1;
+    private int healthPoints  ;
+    private int attackDamage;
 
-    // This is called Encapsulation
+
+    public Enemy(String typeOfEnemy, int healthPoints, int attackDamage) {
+        this.typeOfEnemy = typeOfEnemy;
+        this.healthPoints = healthPoints;
+        this.attackDamage = attackDamage;
+    }
+
+    // This is called Encapsulation or Setter and Getter
     public void setTypeOfEnemy (String typeOfEnemy){
         this.typeOfEnemy = typeOfEnemy;
     }
@@ -30,7 +37,7 @@ public class Enemy {
         return attackDamage;
     }
     /////////
-
+    // This is called Abstraction
     public void talk () {
         System.out.println("I am a " + typeOfEnemy + " be prepared to fight!");
     }
