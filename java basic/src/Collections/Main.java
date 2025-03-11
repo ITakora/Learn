@@ -1,14 +1,15 @@
 package Collections;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        String[] todoItems = new  String[3];
-        todoItems[0] = "Take out the Trash";
-        todoItems[1] = "Do the Dishes";
-        todoItems[2] = "Prep Dinner";
+      List<Integer> numbers = new ArrayList<>(List.of(167, 210, 515, 20, 19));
 
-        for (String item: todoItems) {
-            System.out.println(item);
-        }
+      for (Integer i : numbers) {
+          System.out.println(i);
+      }
+
     }
 }
